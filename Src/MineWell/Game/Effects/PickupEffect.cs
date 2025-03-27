@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell.Effects
+namespace GameManager.Effects
 {
     abstract class PickupEffect : Entity
     {

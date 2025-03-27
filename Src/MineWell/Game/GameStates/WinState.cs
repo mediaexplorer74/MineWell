@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell.GameStates
+namespace GameManager.GameStates
 {
     class WinState : LevelState
     {

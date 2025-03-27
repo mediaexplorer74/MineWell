@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell.Enemies
+namespace GameManager.Enemies
 {
     abstract class Enemy : Entity
     {

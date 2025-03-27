@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell
+namespace GameManager
 {
     /// <summary>
     /// This is the main type for your game.
@@ -41,7 +41,7 @@ namespace MineWell
             Content.RootDirectory = "Content";
             Window.Title = "MineWell";
 
-            SetWindowSize(scale, false);
+            //SetWindowSize(scale, false);
 
             currKeyboard = new KeyboardState();
             prevKeyboard = new KeyboardState();
@@ -184,7 +184,7 @@ namespace MineWell
             if (changeScale)
             {
                 changeScale = false;
-                SetWindowSize(newScale, fullScreen);
+                //SetWindowSize(newScale, fullScreen);
             }
         }
 
@@ -236,6 +236,7 @@ namespace MineWell
             ResourceManager.AddSFX(name, Content.Load<SoundEffect>(name));
         }
 
+        /*
         private void SetWindowSize(float scale, bool full)
         {
             Game1.scale = full ? GetFullScreenScale() : scale;
@@ -274,5 +275,6 @@ namespace MineWell
         {
             return fullScreen;
         }
+        */
     }
 }

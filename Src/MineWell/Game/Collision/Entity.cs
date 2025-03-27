@@ -1,4 +1,4 @@
-﻿using MineWell.Effects;
+﻿using GameManager.Effects;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell
+namespace GameManager
 {
     abstract class Entity
     {

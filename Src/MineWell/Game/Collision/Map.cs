@@ -1,6 +1,6 @@
-﻿using MineWell.Effects;
-using MineWell.Enemies;
-using MineWell.Pickups;
+﻿using GameManager.Effects;
+using GameManager.Enemies;
+using GameManager.Pickups;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -13,7 +13,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell
+namespace GameManager
 {
     class Map
     {
@@ -43,24 +43,27 @@ namespace MineWell
 
         public List<int[]> LoadCSV(string name)
         {
-            String path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
-                @"Maps\" + name + ".csv");
-            StreamReader reader = new StreamReader(path);
-            List<int[]> layers = new List<int[]>();
+            String path = //Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location),
+                "Maps/" + name + ".csv";//);
 
-            while (!reader.EndOfStream)
+            using (StreamReader reader = new StreamReader(File.OpenRead(path)))
             {
-                String line = reader.ReadLine();
-                String[] layerS = line.Split(',');
-                int[] layerI = new int[layerS.Length];
-                for (int i = 0; i < layerS.Length; i++)
-                {
-                    layerI[i] = Convert.ToInt32(layerS[i]);
-                }
-                layers.Add(layerI);
-            }
+                List<int[]> layers = new List<int[]>();
 
-            return layers;
+                while (!reader.EndOfStream)
+                {
+                    String line = reader.ReadLine();
+                    String[] layerS = line.Split(',');
+                    int[] layerI = new int[layerS.Length];
+                    for (int i = 0; i < layerS.Length; i++)
+                    {
+                        layerI[i] = Convert.ToInt32(layerS[i]);
+                    }
+                    layers.Add(layerI);
+                }
+
+                return layers;
+            }
         }
 
         public void LoadBlockMap(string name)

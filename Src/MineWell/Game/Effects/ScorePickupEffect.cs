@@ -1,4 +1,4 @@
-﻿using MineWell.UI;
+﻿using GameManager.UI;
 using Microsoft.Xna.Framework;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell.Effects
+namespace GameManager.Effects
 {
     class ScorePickupEffect : PickupEffect
     {

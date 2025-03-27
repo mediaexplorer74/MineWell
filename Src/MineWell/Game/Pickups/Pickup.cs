@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell.Pickups
+namespace GameManager.Pickups
 {
     abstract class Pickup : Entity
     {

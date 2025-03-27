@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MineWell
+namespace GameManager
 {
     class Player : Entity
     {

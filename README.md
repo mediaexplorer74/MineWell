@@ -1,24 +1,28 @@
-# MineWell 1.0-pre-alpha - net48 branch 
+# MineWell 1.0-alpha - uwp branch 
 ![Logo](Images/logo.png)
 
-My .NET8->.NET 4.8 "quick port" of ITCH.io MineWell "Digger-like" open-sourced game project. :)
+"UWP-remake" of ITCH.io MineWell open-sourced game project.
+
+## Screenshots
+![W11Lite](Images/sshot01.png)
 
 
 ## Status
-- Game framework ("engine"): MonoGame
-- NET 4.8 used
-- Project sucessfully builded 
-- No touch panel support yet
+- UWP app (quickly tested on old notebook Sony Vaio)
+- Min. Win. SDK = 10240, and Win. SDK 19041 used
+- Alpha version is ready (but save game data not reconstructed yet, and screen scaling problems are still here/there)
 
 ## ToDo
-- Add some cool music theme (search some Digger game collection)
+- Fix load objects bug
+- Fix Save game data / load game data
+- Fix screen scaling problem 
+- Add some cool music theme ;)
 
 ## .
 As is. No support. DIY. Learn purposes only.
 
 ## Reference(s)
 - https://superpokeunicorn.itch.io/minewell Original project
-
 
 ## ..
 [m][e] March 2025
