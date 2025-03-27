@@ -13,7 +13,6 @@
 - Alpha version is ready (but save game data not reconstructed yet, and screen scaling problems are still here/there)
 
 ## ToDo
-- Fix load objects bug
 - Fix Save game data / load game data
 - Fix screen scaling problem 
 - Add some cool music theme ;)
